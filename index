@@ -1,17 +1,12 @@
 <!doctype html>
 <html lang="ms">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Memuatkan Sistem...</title>
-
-<meta http-equiv="refresh" content="0; url=https://script.google.com/a/macros/moe.gov.my/s/AKfycby-BRpLAIVmCR4eEvVRq6UCBXCluNpaeAaexuADWIsZ5b8eOKRo833kpgzCO5n5Km03/exec">
-
-<script>
-  location.replace("https://script.google.com/a/macros/moe.gov.my/s/AKfycby-BRpLAIVmCR4eEvVRq6UCBXCluNpaeAaexuADWIsZ5b8eOKRo833kpgzCO5n5Km03/exec");
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Memuatkan Sistem...</title>
+  <script>
+    window.location.href = "https://script.google.com/a/macros/moe.gov.my/s/AKfycby-BRpLAIVmCR4eEvVRq6UCBXCluNpaeAaexuADWIsZ5b8eOKRo833kpgzCO5n5Km03/exec";
+  </script>
 </head>
-<body>
-Memuatkan sistem...
-</body>
+<body>Memuatkan sistem...</body>
 </html>
