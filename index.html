@@ -1,12 +1,72 @@
+# Kenapa perlu makluman walaupun Google minta login?
+
+Walaupun Google AppScript akan meminta pengguna login, masalah sering berlaku apabila pengguna telah sedia login menggunakan akaun bukan MOE/DELIMa. Dalam situasi ini, Google kadangkala tidak memaparkan pilihan pertukaran akaun dengan jelas dan terus memaparkan mesej ralat seperti "Sorry, unable to open the file at this time".
+
+Akibatnya, pengguna menyangka pautan sistem rosak sedangkan punca sebenar ialah akaun yang sedang aktif bukan emel rasmi MOE.
+
+Landing page atau halaman makluman di GitHub berfungsi untuk:
+
+* Memaklumkan awal bahawa akses hanya menggunakan emel MOE/DELIMa
+* Memberi panduan cepat pertukaran akaun
+* Menyediakan butang khas yang memaparkan skrin pemilihan akaun Google (Account Chooser)
+
+---
+
+# Halaman Portal + Pilih Akaun MOE (Cadangan Profesional)
+
+Gunakan kod ini sebagai fail `index.html` dalam GitHub Pages:
+
+```html
 <!doctype html>
 <html lang="ms">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Memuatkan Sistem...</title>
-  <script>
-    window.location.href = "https://script.google.com/a/macros/moe.gov.my/s/AKfycby-BRpLAIVmCR4eEvVRq6UCBXCluNpaeAaexuADWIsZ5b8eOKRo833kpgzCO5n5Km03/exec";
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portal PBD JPN Pahang</title>
+<style>
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#f3f6fb;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{background:#fff;border-radius:14px;max-width:560px;width:100%;box-shadow:0 12px 30px rgba(0,0,0,.1);padding:28px;border:1px solid #e2e8f0}
+h1{margin:0;color:#0f172a}
+p{color:#334155;line-height:1.6}
+.tag{display:inline-block;background:#eef2ff;color:#1e40af;border-radius:999px;padding:6px 12px;font-weight:600;font-size:13px;margin-bottom:10px}
+.btn{display:inline-block;margin-top:14px;background:#2563eb;color:#fff;text-decoration:none;padding:12px 18px;border-radius:10px;font-weight:700}
+.btn2{display:inline-block;margin-top:10px;background:#0f172a;color:#fff;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}
+.note{font-size:13px;color:#64748b;margin-top:14px}
+ul{margin-left:18px;color:#334155}
+</style>
 </head>
-<body>Memuatkan sistem...</body>
+<body>
+<div class="card">
+<span class="tag">Akses Dalaman KPM / DELIMa</span>
+<h1>Portal PBD JPN Pahang</h1>
+<p>Sistem ini hanya boleh diakses menggunakan <b>emel rasmi MOE/DELIMa</b>. Jika anda login akaun lain, paparan ralat mungkin akan muncul.</p>
+
+<a class="btn" href="https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fscript.google.com%2Fa%2Fmacros%2Fmoe.gov.my%2Fs%2FAKfycby-BRpLAIVmCR4eEvVRq6UCBXCluNpaeAaexuADWIsZ5b8eOKRo833kpgzCO5n5Km03%2Fexec">Buka Sistem (Pilih Akaun MOE)</a>
+<br>
+<a class="btn2" href="https://script.google.com/a/macros/moe.gov.my/s/AKfycby-BRpLAIVmCR4eEvVRq6UCBXCluNpaeAaexuADWIsZ5b8eOKRo833kpgzCO5n5Km03/exec">Buka Sistem Terus</a>
+
+<div class="note">
+Jika masih tidak boleh akses:
+<ul>
+<li>Gunakan Incognito (Ctrl+Shift+N)</li>
+<li>Tambah akaun emel MOE di Google</li>
+<li>Gunakan Chrome Profile khas emel MOE</li>
+</ul>
+</div>
+</div>
+</body>
 </html>
+```
+
+---
+
+# Teks Makluman Ringkas untuk Edaran
+
+**Makluman Akses Portal PBD JPN Pahang**
+Portal ini hanya boleh diakses menggunakan **emel rasmi MOE/DELIMa**. Sila pastikan anda login akaun MOE terlebih dahulu. Jika login akaun selain MOE, sistem mungkin memaparkan ralat.
+
+---
+
+# Kesimpulan
+
+Halaman makluman bukan menggantikan login Google, tetapi mengelakkan kekeliruan pengguna dan mempercepatkan akses menggunakan akaun MOE yang betul. Ia menjadikan sistem lebih profesional dan mesra pengguna.
